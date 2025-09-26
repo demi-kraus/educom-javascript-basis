@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+
+            const isEven = (num)=>{
+                const modulus = num % 2
+                return(modulus)
+            }
+          
+            let total = 0
+            let total2 = 0
+            for (let i=0;i<=100;i++){
+                console.log(i)
+
+                if (isEven(i)==0){total = total + i}
+                total2 = isEven(i)==0 ? total2 + i : total2
+            }
+
+            console.log(`Total : ${total}`)
+            console.log(`Total2 : ${total2}`)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
